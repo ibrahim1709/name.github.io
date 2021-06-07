@@ -1,0 +1,246 @@
+<html>
+<head><title>MENU BAR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+ <!-- JavaScript -->
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+        
+
+       
+        $(document).ready(function(){
+            $(".icn").click(function(){
+                $("#pan").slideToggle("fast");
+               
+            });
+        });
+</script>
+<style>
+body{
+background-image:url("img.jpg" );
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center 100%;
+opacity:1.2;
+}
+
+
+
+.nav{
+width:100%;
+height:40px;
+background-color:grey;
+
+
+}
+ .logo{
+               margin: 0 50px;
+               float: left;
+               color: #fff;
+               padding: 10px 10px;
+               
+        }
+.icn{
+            float: right;
+            margin-right: 5%;
+            margin-top: 0px;
+            display: none;
+        }
+
+
+.nav ul{
+float:right;
+padding:0px 20px;
+
+}
+.nav ul li{
+float:left;
+ border-right:1px solid #fff;
+list-style:none;
+
+}
+.nav ul li a{
+display:inline block;
+padding:0px 20px;
+color:white;
+text-decoration:none;
+
+transition:0.5s;
+
+}
+.nav a:hover{
+background-color:black;
+color:white;
+}
+
+.text{
+padding:0 35%;
+font-size:50px;
+height:50px;
+}
+
+ .search{
+padding:18% 35%;
+height:35px;
+
+
+}
+.search input[type=text]{
+height:40px;
+width:250px;
+font-size:15px;
+border:2px solid black;
+opacity:0.7;
+}
+ .search button{
+height:40px;
+color:white;
+background-color:black;
+border:2px solid white;
+transition:0.5s;
+}
+ .search button:hover{
+background-color:grey;
+color:white;
+}
+.box{
+width:650px;
+height:auto;
+padding:2px;
+margin-left:350px;
+border:5px solid white;
+}
+@media (max-width:1200px){
+
+ .search{
+padding:10% 30%;
+height:25px;
+}
+.box{
+
+width:400px;
+padding:2px;
+margin-left:300px;
+border:2px solid white;
+}
+}
+@media (max-width:1000px){
+
+.nav ul{
+float:right;
+padding:0px 12px;
+}
+.nav ul li{
+float:left;
+ border-right:1px solid #fff;
+list-style:none;
+
+}
+.nav ul li a{
+display:inline block;
+padding:0px 12px;
+color:white;
+text-decoration:none;
+
+transition:0.5s;
+
+}
+ .search{
+padding:10% 25%;
+height:25px;
+}
+.box{
+margin-left:250px;
+}
+}
+}
+@media (max-width:800px){
+.nav ul{
+float:right;
+padding:0px 12px;
+display:none;
+}
+.nav ul li{
+display:flex;
+flex-direction:column;
+ border-right:1px solid #fff;
+list-style:none;
+
+}
+.nav ul li a{
+
+padding:0px 20px;
+color:white;
+text-decoration:none;
+
+transition:0.5s;
+
+}
+.icn{
+display:block;
+
+           
+}
+ .search{
+padding:5% 15%;
+height:15px;
+}
+.box{
+margin-left:250px;
+}
+}
+</style>
+<head>
+<body>
+<div class="logo">
+MD IBRAHIM
+</div>
+  <div class="icn">
+                <img src="https://img.icons8.com/cotton/2x/menu.png" alt="MENU" width="40px" height="auto">
+            </div>
+<div class="nav">
+
+<ul id="pan">
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#">PRODUCTS</a></li>
+
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">CONTACT US</a></li>
+<ul>
+
+
+</div>
+<div class="text" style="text-align:center;">
+H<span style="color:white">O</span>ME <span style="color:white">DEC<span style="color:black">O</span>RS</span>
+</div>
+<div class="search">
+<img src="https://img.icons8.com/pastel-glyph/2x/search--v2.png" width="40px" height="40px"><input type="text" placeholder="search">
+<button type="button">search</button><br>
+
+</div>
+<div class="box">
+<div class="carousel" data-flickity='{ "Parallax": true }'>
+  <div class="carousel-cell">
+<img src="i1.jpg" alt="oops! No image found" width="100%" height="350" >
+</div>
+  <div class="carousel-cell">
+<img src="  i2.jpg  " alt="oops! No image found" width="100%" height="350" >
+</div>
+  <div class="carousel-cell">
+
+<img src="i3.jpg "alt="oops! No image found" width="100%" height="350" >
+
+</div>
+  <div class="carousel-cell">
+
+<img src="i4.jpg "alt="oops! No image found" width="100%" height="350" >
+
+</div>
+  </div>
+</div>
+
+</body>
+</html>
